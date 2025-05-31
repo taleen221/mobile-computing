@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Noor Beauty - Makeup Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#d63398">
+
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <h1>Noor Beauty</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="cart.html">Shopping Cart</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- كرر المنتجات كما هو -->
+                <div class="product">
+                    <img src="lipstick.jpeg" alt="Lipstick" />
+                    <p>Lipstick</p>
+                    <p class="price">$15</p>
+                    <button class="addToCart" data-name="Lipstick" data-price="15">Add to Cart</button>
+                </div>
+                <!-- باقي المنتجات ... -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="total">$0.00</span></p>
+            <button onclick="clearCart()">Clear Cart</button>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Taleen Beauty. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
